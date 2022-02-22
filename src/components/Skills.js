@@ -1,7 +1,15 @@
+import styled from 'styled-components';
+
+const StyledSection = styled.section`
+  background-color: aliceblue;
+  padding: 1em;
+`;
+
 export default function Skills() {
   return (
-    <section>
+    <StyledSection>
       <h2>Skills/Stack</h2>
+      <h3>Always Learning</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -13,6 +21,6 @@ export default function Skills() {
         <li>NodeJS</li>
         <li>Git</li>
       </ul>
-    </section>
+    </StyledSection>
   );
 }

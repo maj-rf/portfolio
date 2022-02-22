@@ -1,6 +1,13 @@
+import styled from 'styled-components';
+
+const StyledSection = styled.section`
+  background-color: tan;
+  padding: 1em;
+`;
+
 export default function Contact() {
   return (
-    <section>
+    <StyledSection>
       <h2>Contact Me:</h2>
       <form>
         <label htmlFor="subject">Subject</label>
@@ -12,6 +19,6 @@ export default function Contact() {
           id="message"
         />
       </form>
-    </section>
+    </StyledSection>
   );
 }

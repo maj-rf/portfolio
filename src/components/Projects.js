@@ -1,7 +1,15 @@
+import styled from 'styled-components';
+
+const StyledSection = styled.section`
+  background-color: rebeccapurple;
+  padding: 1em;
+`;
+
 export default function Projects() {
   return (
-    <section>
+    <StyledSection>
       <h2>Projects</h2>
+      <h3>I build and make stuff.</h3>
       <ul>
         <li>
           <h3>Project Title</h3>
@@ -24,6 +32,6 @@ export default function Projects() {
           </p>
         </li>
       </ul>
-    </section>
+    </StyledSection>
   );
 }
