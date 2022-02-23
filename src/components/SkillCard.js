@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const Card = styled.li`
-  background-color: #c7c7c7;
   padding: 1em;
-  border-radius: 50%;
   img {
     vertical-align: middle;
+    max-height: 200px;
+    max-width: 200px;
   }
 `;
 

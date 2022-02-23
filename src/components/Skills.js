@@ -5,15 +5,15 @@ import SkillCard from './SkillCard';
 const StyledSection = styled.section`
   background-color: aliceblue;
   padding: 1em;
-
-  ul {
-    list-style: none;
-  }
 `;
 
 const SkillCardWrapper = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  gap: 1em;
 `;
 
 export default function Skills() {
