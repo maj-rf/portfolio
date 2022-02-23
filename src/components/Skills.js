@@ -1,8 +1,19 @@
 import styled from 'styled-components';
+import { data } from '../utils/skilldata';
+import SkillCard from './SkillCard';
 
 const StyledSection = styled.section`
   background-color: aliceblue;
   padding: 1em;
+
+  ul {
+    list-style: none;
+  }
+`;
+
+const SkillCardWrapper = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export default function Skills() {
@@ -10,17 +21,11 @@ export default function Skills() {
     <StyledSection>
       <h2>Skills/Stack</h2>
       <h3>Always Learning</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>styled-components</li>
-        <li>Firebase</li>
-        <li>NodeJS</li>
-        <li>Git</li>
-      </ul>
+      <SkillCardWrapper>
+        {data.map((skill) => (
+          <SkillCard key={skill.name} name={skill.name} image={skill.image} />
+        ))}
+      </SkillCardWrapper>
     </StyledSection>
   );
 }

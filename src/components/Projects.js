@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <StyledSection>
       <h2>Projects</h2>
-      <h3>I build and make stuff.</h3>
+      <h3>Occasionally building.</h3>
       <ul>
         <li>
           <h3>Project Title</h3>
