@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Card = styled.li`
-  padding: 0.3em;
+  padding: 0.3rem;
   img {
     vertical-align: middle;
     max-height: 170px;

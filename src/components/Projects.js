@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  padding: 1em;
+  padding: 1rem;
   height: 100vh;
 `;
 

@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const StyledSection = styled.section`
   background-color: #fff;
-  padding: 1em;
+  padding: 1rem;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 2rem;
 
   .left {
     flex: 40%;

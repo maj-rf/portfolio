@@ -7,8 +7,8 @@ const NavWrapper = styled.nav`
   left: 0;
   width: 100%;
   padding: 0;
-  font-size: 1.2em;
-  background-color: #191919;
+  font-size: 1.2rem;
+  background-color: #121212;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -21,17 +21,26 @@ const LinksContainer = styled.ul`
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  & li:hover {
-    background-color: antiquewhite;
-    color: blue;
+
+  & li:last-child {
+    background-color: #02a3ee;
+    padding: 0.5rem;
+  }
+
+  & li:last-child:hover {
+    color: #121212;
   }
 `;
 
 const NavLink = styled.li`
   cursor: pointer;
   text-transform: uppercase;
-  border-radius: 5px 5px;
-  padding: 1em;
+  border-radius: 7px 7px;
+  padding: 1rem;
+
+  &:hover {
+    color: #ee4e02;
+  }
 `;
 export default function Navbar() {
   // const [navState, setNavState] = useState(false);
@@ -59,7 +68,7 @@ export default function Navbar() {
         <NavLink>Home</NavLink>
         <NavLink>Skills</NavLink>
         <NavLink>Projects</NavLink>
-        <NavLink>Contact</NavLink>
+        <NavLink>Contact Me</NavLink>
       </LinksContainer>
       <button>O</button>
     </NavWrapper>

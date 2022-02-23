@@ -7,10 +7,8 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 16px;
   min-height: 100%;
   overflow-wrap: break-word;
-  //background-color: #e7e7e7;
 }
 
 *,

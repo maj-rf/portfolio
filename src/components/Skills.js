@@ -3,7 +3,7 @@ import { data } from '../utils/skilldata';
 import SkillCard from './SkillCard';
 
 const StyledSection = styled.section`
-  padding: 1em;
+  padding: 1rem;
 `;
 
 const SkillCardWrapper = styled.ul`
