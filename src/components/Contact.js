@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  background-color: tan;
   padding: 1em;
 `;
 

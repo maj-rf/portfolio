@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  background-color: rebeccapurple;
   padding: 1em;
+  height: 100vh;
 `;
 
 export default function Projects() {

@@ -3,16 +3,15 @@ import { data } from '../utils/skilldata';
 import SkillCard from './SkillCard';
 
 const StyledSection = styled.section`
-  background-color: aliceblue;
   padding: 1em;
 `;
 
 const SkillCardWrapper = styled.ul`
-  list-style: none;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  grid-auto-rows: 200px;
   gap: 0.5em 1em;
 `;
 

@@ -4,8 +4,8 @@ const Card = styled.li`
   padding: 0.3em;
   img {
     vertical-align: middle;
-    max-height: 160px;
-    max-width: 160px;
+    max-height: 170px;
+    max-width: 170px;
   }
 `;
 
