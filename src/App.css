@@ -6,7 +6,6 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: calc(0.6em + 1vw);
   min-height: 100%;
   overflow-wrap: break-word;
   background-color: #e7e7e7;
@@ -16,6 +15,12 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 .App {

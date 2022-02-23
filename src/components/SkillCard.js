@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const Card = styled.li`
-  padding: 1em;
+  padding: 0.3em;
   img {
     vertical-align: middle;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 160px;
+    max-width: 160px;
   }
 `;
 
