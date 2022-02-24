@@ -4,18 +4,25 @@ import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import { GlobalStyles } from './components/globalStyles';
+import { GlobalStyles, lightTheme, darkTheme } from './components/globalStyles';
+import useDarkMode from './components/hooks/useDarkMode';
+import { ThemeProvider } from 'styled-components';
+
 function App() {
+  const [theme, toggleTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   return (
     <>
-      <GlobalStyles />
-      <div className="App">
-        <Navbar />
-        <Intro />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
+        <div className="App">
+          <Navbar theme={theme} toggleTheme={toggleTheme} />
+          <Intro />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
+      </ThemeProvider>
     </>
   );
 }

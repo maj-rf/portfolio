@@ -12,14 +12,14 @@ export default function Projects() {
       <ul>
         {projectdata.map((proj) => {
           return (
-            <li key={proj.name}>
+            <li key={proj.title}>
               <h3>{proj.title}</h3>
               <div>Image</div>
               <div>
                 <p>Stack:</p>
                 <ul>
                   {proj.tags.map((tag) => {
-                    return <li key={tag}>{tag}</li>;
+                    return <li key={tag + proj.title}>{tag}</li>;
                   })}
                 </ul>
               </div>

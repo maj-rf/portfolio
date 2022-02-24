@@ -1,35 +1,34 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-  background-color: #fff;
-  padding: 1rem;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: calc(1rem + 1.1vw);
 
-  .left {
-    flex: 40%;
+  .intro-cont {
+    padding: 1rem;
+  }
+  span {
+    color: #02a3ee;
   }
 
-  .right {
-    flex: 60%;
-  }
+  /* @media only screen and (max-width: 768px) {
+  } */
 `;
 
 export default function Intro() {
   return (
     <StyledSection>
-      <div className="left">
-        <p>LOGO</p>
+      <div className="intro-cont">
+        <h3>Hi,</h3>
+        <h2>
+          I am <span>Majed Fermin</span>.
+        </h2>
+        <h3>Frontend Developer from PH.</h3>
+        <h4> I create responsive websites and applications.</h4>
       </div>
-      <div className="right">
-        <h1>Hi, I'm Maj!</h1>
-        <h2>Frontend Developer</h2>
-        <p> I create responsive websites and applications.</p>
-      </div>
-      <div></div>
     </StyledSection>
   );
 }

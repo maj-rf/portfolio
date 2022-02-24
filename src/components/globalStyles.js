@@ -9,6 +9,10 @@ body {
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+  background-color: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
+  transition: all 0.5s linear;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -24,10 +28,6 @@ li {
   list-style: none;
 }
 
-.App {
-  text-align: center;
-}
-
 /* @media only screen and (min-width: 760px) {
   .App{
     display: flex;
@@ -35,3 +35,13 @@ li {
   }
 } */
 `;
+
+export const lightTheme = {
+  body: '#fff',
+  text: '#303030',
+};
+
+export const darkTheme = {
+  body: '#303030',
+  text: '#fff',
+};
