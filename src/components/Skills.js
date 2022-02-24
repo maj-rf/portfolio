@@ -10,9 +10,9 @@ const SkillCardWrapper = styled.ul`
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
   grid-auto-rows: 200px;
-  gap: 0.5em 1em;
+  gap: 1rem;
 `;
 
 export default function Skills() {

@@ -44,7 +44,7 @@ export const projectdata = [
   {
     title: 'This Portfolio Site',
     description: 'My Portfolio',
-    tags: ['React, styled-components'],
+    tags: ['React', 'styled-components'],
     image: '',
     repo: 'https://github.com/bananabread08/portfolio',
     live: '',

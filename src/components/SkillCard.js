@@ -1,18 +1,29 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const Card = styled.li`
-  padding: 0.3rem;
+  background-color: rgba(200, 200, 200, 0.3);
+  border-radius: 20%;
+  div {
+    font-size: 20px;
+    height: 160px;
+  }
   img {
-    vertical-align: middle;
-    max-height: 170px;
-    max-width: 170px;
+    padding: 1rem;
+    max-height: 160px;
+    height: auto;
+    width: auto;
   }
 `;
 
 export default function SkillCard({ name, image }) {
+  const [flip, setFlip] = useState(false);
   return (
-    <Card>
-      <img src={image} alt={name}></img>
+    <Card
+      onMouseEnter={() => setFlip(true)}
+      onMouseLeave={() => setFlip(false)}
+    >
+      {flip ? <div>{name}</div> : <img src={image} alt={name}></img>}
     </Card>
   );
 }
