@@ -38,10 +38,12 @@ li {
 
 export const lightTheme = {
   body: '#fff',
-  text: '#303030',
+  text: '#121212',
+  nav: '#efeff4',
 };
 
 export const darkTheme = {
-  body: '#303030',
+  body: '#121212',
   text: '#fff',
+  nav: '#1E1E1E',
 };

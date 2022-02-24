@@ -8,8 +8,9 @@ const NavWrapper = styled.nav`
   height: 70px;
   padding: 0;
   font-size: 1.2rem;
-  background-color: #121212;
-  color: #fff;
+  background-color: ${(props) => props.theme.nav};
+  color: ${(props) => props.theme.text};
+  //box-shadow: ${(props) => props.theme.shadow};
   display: flex;
   justify-content: space-between;
   z-index: 1;
