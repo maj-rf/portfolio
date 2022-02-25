@@ -1,33 +1,9 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { LightMode } from '@styled-icons/material/LightMode';
 import { DarkMode } from '@styled-icons/material-rounded/DarkMode';
 import { Dog } from '@styled-icons/fa-solid/Dog';
-
-const waveAnimation = keyframes`
-0% {
-      transform: rotate(0deg);
-    }
-    10% {
-      transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-      transform: rotate(-8deg);
-    }
-    30% {
-      transform: rotate(14deg);
-    }
-    40% {
-      transform: rotate(-4deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    60% {
-      transform: rotate(0deg);
-    } /* Reset for the last half to pause */
-    100% {
-      transform: rotate(0deg);
-    }`;
+import { waveAnimation } from '../globalStyles';
+import { MenuAlt3 } from '@styled-icons/heroicons-solid/MenuAlt3';
 const Moon = styled(DarkMode)`
   margin-top: 5px;
   height: 40px;
@@ -53,18 +29,36 @@ const Sun = styled(LightMode)`
   }
 `;
 
-const LinkContainer = styled.ul`
+const LinksContainer = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 const Links = styled.li`
-  padding: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0 auto;
+    height: 2px;
+    background-color: ${(props) => props.theme.text};
+  }
+  &:hover::after {
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+  }
 `;
 
-const LogoContainer = styled(LinkContainer)`
-  margin: 1rem;
+const LogoContainer = styled(LinksContainer)`
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 `;
 
@@ -83,6 +77,16 @@ const DogIcon = styled(Dog)`
   }
 `;
 
+const ButtonsContainer = styled(LinksContainer)`
+  margin-right: 0.5rem;
+`;
+const BurgerMenu = styled(MenuAlt3)`
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  margin-right: 0.5rem;
+`;
+
 const NavWrapper = styled.nav`
   position: sticky;
   top: 0;
@@ -98,9 +102,26 @@ const NavWrapper = styled.nav`
 
   @media screen and (max-width: 768px) {
     ${Links} {
+      //display: ${(props) => (props.menuOpen ? 'flex' : 'none')};
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    ${BurgerMenu} {
       display: none;
     }
   }
 `;
 
-export { NavWrapper, Moon, Sun, LinkContainer, Links, DogIcon, LogoContainer };
+export {
+  NavWrapper,
+  Moon,
+  Sun,
+  LinksContainer,
+  Links,
+  DogIcon,
+  LogoContainer,
+  BurgerMenu,
+  ButtonsContainer,
+};

@@ -3,10 +3,12 @@ import {
   NavWrapper,
   Moon,
   Sun,
-  LinkContainer,
+  LinksContainer,
   Links,
   DogIcon,
   LogoContainer,
+  BurgerMenu,
+  ButtonsContainer,
 } from './Navbar.style';
 
 export default function Navbar({ theme, toggleTheme }) {
@@ -24,16 +26,19 @@ export default function Navbar({ theme, toggleTheme }) {
           <DogIcon />
         </span>
       </LogoContainer>
-      <LinkContainer>
+      <LinksContainer>
         <Links>Home</Links>
         <Links>About Me</Links>
         <Links>Projects</Links>
-      </LinkContainer>
-      {theme === 'light' ? (
-        <Moon onClick={toggleTheme} />
-      ) : (
-        <Sun onClick={toggleTheme} />
-      )}
+      </LinksContainer>
+      <ButtonsContainer>
+        <BurgerMenu onClick={handleMenu} />
+        {theme === 'light' ? (
+          <Moon onClick={toggleTheme} />
+        ) : (
+          <Sun onClick={toggleTheme} />
+        )}
+      </ButtonsContainer>
     </NavWrapper>
   );
 }
