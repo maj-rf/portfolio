@@ -40,10 +40,11 @@ export const lightTheme = {
   body: '#fff',
   text: '#121212',
   nav: '#efeff4',
+  button: '#582FBB',
 };
 
 export const darkTheme = {
-  nav: '#121212',
   text: '#fff',
-  body: '#1E1E1E',
+  body: '#121212',
+  button: '#FABE58',
 };
