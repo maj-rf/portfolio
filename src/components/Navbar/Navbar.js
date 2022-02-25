@@ -1,14 +1,13 @@
-import styled from 'styled-components';
 import { useState } from 'react';
 import {
   NavWrapper,
   Moon,
   Sun,
-  ModeButton,
   LinkContainer,
   Links,
+  DogIcon,
+  LogoContainer,
 } from './Navbar.style';
-import { Dog } from '@styled-icons/fa-solid/Dog';
 
 export default function Navbar({ theme, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,27 +18,22 @@ export default function Navbar({ theme, toggleTheme }) {
 
   return (
     <NavWrapper>
+      <LogoContainer>
+        maj.dev
+        <span>
+          <DogIcon />
+        </span>
+      </LogoContainer>
       <LinkContainer>
-        <p>maj.dev</p>
-
-        <li>
-          <Dog></Dog>
-        </li>
+        <Links>Home</Links>
+        <Links>About Me</Links>
+        <Links>Projects</Links>
       </LinkContainer>
-      <div>
-        <LinkContainer>
-          <Links>Home</Links>
-          <Links>About Me</Links>
-          <Links>Projects</Links>
-        </LinkContainer>
-      </div>
-      <div>
-        {theme === 'light' ? (
-          <Moon onClick={toggleTheme} />
-        ) : (
-          <Sun onClick={toggleTheme} />
-        )}
-      </div>
+      {theme === 'light' ? (
+        <Moon onClick={toggleTheme} />
+      ) : (
+        <Sun onClick={toggleTheme} />
+      )}
     </NavWrapper>
   );
 }
