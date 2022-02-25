@@ -43,7 +43,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  body: '#121212',
+  nav: '#121212',
   text: '#fff',
-  nav: '#1E1E1E',
+  body: '#1E1E1E',
 };

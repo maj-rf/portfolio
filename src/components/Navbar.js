@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import { MdDarkMode, MdOutlineWbSunny } from 'react-icons/md';
+import { IconContext } from 'react-icons/lib';
 const NavWrapper = styled.nav`
   position: fixed;
   top: 0;
@@ -16,10 +17,18 @@ const NavWrapper = styled.nav`
   z-index: 1;
   overflow: hidden;
 
+  .mode-icon {
+    height: 50px;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   @media only screen and (max-width: 768px) {
     font-size: 15px;
 
-    & ul:first-child {
+    & ul {
       display: none;
     }
   }
@@ -51,13 +60,20 @@ const NavLink = styled.li`
 export default function Navbar({ theme, toggleTheme }) {
   return (
     <NavWrapper>
+      <div>X</div>
       <LinksContainer>
         <NavLink>Home</NavLink>
         <NavLink>Skills</NavLink>
         <NavLink>Projects</NavLink>
         <NavLink>Contact Me</NavLink>
       </LinksContainer>
-      <button onClick={toggleTheme}></button>
+      <IconContext.Provider value={{ className: 'mode-icon' }}>
+        {theme === 'dark' ? (
+          <MdDarkMode onClick={toggleTheme} />
+        ) : (
+          <MdOutlineWbSunny onClick={toggleTheme} />
+        )}
+      </IconContext.Provider>
     </NavWrapper>
   );
 }
