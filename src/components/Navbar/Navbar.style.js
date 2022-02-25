@@ -4,6 +4,7 @@ import { DarkMode } from '@styled-icons/material-rounded/DarkMode';
 import { Dog } from '@styled-icons/fa-solid/Dog';
 import { waveAnimation } from '../globalStyles';
 import { MenuAlt3 } from '@styled-icons/heroicons-solid/MenuAlt3';
+import { Close } from '@styled-icons/evaicons-solid/Close';
 const Moon = styled(DarkMode)`
   margin-top: 5px;
   height: 40px;
@@ -29,16 +30,11 @@ const Sun = styled(LightMode)`
   }
 `;
 
-const LinksContainer = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 const Links = styled.li`
   padding: 0.5rem;
   cursor: pointer;
   position: relative;
+  text-transform: uppercase;
   &::after {
     position: absolute;
     content: '';
@@ -53,6 +49,18 @@ const Links = styled.li`
   &:hover::after {
     width: 80%;
     transition: all 0.5s ease-in-out;
+  }
+`;
+
+const LinksContainer = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    ${Links} {
+      display: none;
+    }
   }
 `;
 
@@ -87,28 +95,48 @@ const BurgerMenu = styled(MenuAlt3)`
   margin-right: 0.5rem;
 `;
 
+const CloseIcon = styled(Close)`
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  margin-right: 0.5rem;
+`;
+
+const Dropdown = styled.ul`
+  display: none;
+  height: max-content;
+  width: 100%;
+  background-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.text};
+  ${Links} {
+    padding: 1rem;
+  }
+`;
+
 const NavWrapper = styled.nav`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  overflow: hidden;
 
   @media screen and (max-width: 768px) {
-    ${Links} {
-      //display: ${(props) => (props.menuOpen ? 'flex' : 'none')};
-      display: none;
+    ${Dropdown} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
   }
-
   @media screen and (min-width: 768px) {
-    ${BurgerMenu} {
+    ${BurgerMenu}, ${CloseIcon} {
       display: none;
     }
   }
@@ -124,4 +152,6 @@ export {
   LogoContainer,
   BurgerMenu,
   ButtonsContainer,
+  CloseIcon,
+  Dropdown,
 };

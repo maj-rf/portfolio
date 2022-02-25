@@ -9,6 +9,8 @@ import {
   LogoContainer,
   BurgerMenu,
   ButtonsContainer,
+  CloseIcon,
+  Dropdown,
 } from './Navbar.style';
 
 export default function Navbar({ theme, toggleTheme }) {
@@ -28,17 +30,29 @@ export default function Navbar({ theme, toggleTheme }) {
       </LogoContainer>
       <LinksContainer>
         <Links>Home</Links>
-        <Links>About Me</Links>
+        <Links>About</Links>
         <Links>Projects</Links>
       </LinksContainer>
       <ButtonsContainer>
-        <BurgerMenu onClick={handleMenu} />
+        {menuOpen ? (
+          <CloseIcon onClick={handleMenu} />
+        ) : (
+          <BurgerMenu onClick={handleMenu} />
+        )}
+
         {theme === 'light' ? (
           <Moon onClick={toggleTheme} />
         ) : (
           <Sun onClick={toggleTheme} />
         )}
       </ButtonsContainer>
+      {menuOpen && (
+        <Dropdown>
+          <Links>Home</Links>
+          <Links>About</Links>
+          <Links>Projects</Links>
+        </Dropdown>
+      )}
     </NavWrapper>
   );
 }

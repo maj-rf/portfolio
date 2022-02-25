@@ -1,6 +1,7 @@
 import { createGlobalStyle, keyframes } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+
 html,
 body {
   box-sizing: border-box;
@@ -39,14 +40,17 @@ li {
 export const lightTheme = {
   body: '#fff',
   text: '#121212',
-  nav: '#efeff4',
   button: '#582FBB',
+  ddtext: '#fff',
+  ddbg: '#121212',
 };
 
 export const darkTheme = {
   text: '#fff',
   body: '#121212',
   button: '#FABE58',
+  ddtext: '#121212',
+  ddbg: '#fff',
 };
 
 export const waveAnimation = keyframes`
