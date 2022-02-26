@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Intro from './components/Intro';
+import Intro from './components/Hero/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
