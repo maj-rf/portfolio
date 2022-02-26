@@ -3,7 +3,7 @@ import { ProjectSection, ProjectsContainer } from './Projects.styles';
 import ProjectCard from './ProjectCard';
 export default function Projects() {
   return (
-    <ProjectSection>
+    <ProjectSection id="projects">
       <h1>Projects</h1>
       <h3>Occasionally building.</h3>
       <ProjectsContainer>

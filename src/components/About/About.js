@@ -3,7 +3,7 @@ import { AboutSection, SkillCardWrapper } from './About.style';
 import SkillCard from './SkillCard';
 export default function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <div>
         <h1>About</h1>
         <h3>Consitency is key.</h3>

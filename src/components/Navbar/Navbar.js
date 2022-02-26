@@ -12,6 +12,7 @@ import {
   CloseIcon,
   Dropdown,
 } from './Navbar.style';
+import { Link } from 'react-scroll';
 
 export default function Navbar({ theme, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,9 +30,42 @@ export default function Navbar({ theme, toggleTheme }) {
         </span>
       </LogoContainer>
       <LinksContainer>
-        <Links>Home</Links>
-        <Links>About</Links>
-        <Links>Projects</Links>
+        <Links>
+          <Link
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={100}
+          >
+            Home
+          </Link>
+        </Links>
+        <Links>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            About
+          </Link>
+        </Links>
+        <Links>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={100}
+          >
+            Projects
+          </Link>
+        </Links>
       </LinksContainer>
       <ButtonsContainer>
         {menuOpen ? (
@@ -48,9 +82,45 @@ export default function Navbar({ theme, toggleTheme }) {
       </ButtonsContainer>
       {menuOpen && (
         <Dropdown>
-          <Links>Home</Links>
-          <Links>About</Links>
-          <Links>Projects</Links>
+          <Links>
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={100}
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </Links>
+          <Links>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </Links>
+          <Links>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={100}
+              onClick={() => setMenuOpen(false)}
+            >
+              Projects
+            </Link>
+          </Links>
         </Dropdown>
       )}
     </NavWrapper>

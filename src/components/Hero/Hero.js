@@ -8,7 +8,7 @@ import {
 
 export default function Hero(props) {
   return (
-    <HeroSection>
+    <HeroSection id="hero">
       <div className="intro-cont">
         <h3>
           Hello,{' '}
