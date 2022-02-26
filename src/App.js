@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Hero/Hero';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import About from './components/About/About';
 import Contact from './components/Contact';
 import { GlobalStyles, lightTheme, darkTheme } from './components/globalStyles';
 import useDarkMode from './components/hooks/useDarkMode';
@@ -18,7 +18,7 @@ function App() {
         <div className="App">
           <Navbar theme={theme} toggleTheme={toggleTheme} />
           <Intro />
-          <Skills />
+          <About />
           <Projects />
           <Contact />
         </div>
