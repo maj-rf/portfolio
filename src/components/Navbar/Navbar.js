@@ -37,7 +37,7 @@ export default function Navbar({ theme, toggleTheme }) {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={100}
+            duration={150}
           >
             Home
           </Link>
@@ -49,7 +49,7 @@ export default function Navbar({ theme, toggleTheme }) {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={100}
+            duration={150}
           >
             About
           </Link>
@@ -61,7 +61,7 @@ export default function Navbar({ theme, toggleTheme }) {
             spy={true}
             smooth={true}
             offset={-60}
-            duration={100}
+            duration={150}
           >
             Projects
           </Link>
@@ -89,7 +89,7 @@ export default function Navbar({ theme, toggleTheme }) {
               spy={true}
               smooth={true}
               offset={-50}
-              duration={100}
+              duration={150}
               onClick={() => setMenuOpen(false)}
             >
               Home
@@ -102,7 +102,7 @@ export default function Navbar({ theme, toggleTheme }) {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={100}
+              duration={150}
               onClick={() => setMenuOpen(false)}
             >
               About
@@ -115,7 +115,7 @@ export default function Navbar({ theme, toggleTheme }) {
               spy={true}
               smooth={true}
               offset={-60}
-              duration={100}
+              duration={150}
               onClick={() => setMenuOpen(false)}
             >
               Projects

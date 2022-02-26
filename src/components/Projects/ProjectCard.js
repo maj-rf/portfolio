@@ -11,7 +11,7 @@ function ProjectCard({ proj }) {
       </div>
       <Tags proj={proj} />
       <p>{proj.description}</p>
-      <a href={proj.repo}>Repository</a>
+      <a href={proj.repo}>Github</a>
       <a href={proj.live}>Demo</a>
     </CardContainer>
   );

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
-import Contact from './components/Contact';
+//import Contact from './components/Contact';
 import { GlobalStyles, lightTheme, darkTheme } from './components/globalStyles';
 import useDarkMode from './components/hooks/useDarkMode';
 import { ThemeProvider } from 'styled-components';
@@ -20,7 +20,7 @@ function App() {
           <Intro />
           <About />
           <Projects />
-          <Contact />
+          {/* <Contact /> */}
         </div>
       </ThemeProvider>
     </>
