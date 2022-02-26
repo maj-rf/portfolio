@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const StyledSection = styled.section`
   padding: 1rem;
+  margin: 6rem;
+  line-height: 1.5rem;
 `;
 
 export default function Contact() {
