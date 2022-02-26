@@ -57,7 +57,7 @@ const LinksContainer = styled.ul`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     ${Links} {
       display: none;
     }
@@ -125,7 +125,7 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
   z-index: 1;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     ${Dropdown} {
       display: flex;
       flex-direction: column;
@@ -135,7 +135,7 @@ const NavWrapper = styled.nav`
       left: 0;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     ${BurgerMenu}, ${CloseIcon} {
       display: none;
     }

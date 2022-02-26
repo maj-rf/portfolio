@@ -3,17 +3,13 @@ import styled from 'styled-components';
 const TagElement = styled.li`
   border: 1px solid;
   border-radius: 5px;
-  margin: 0.5rem;
-  padding: 0.5rem;
-
-  @media screen and (max-width: 768px) {
-    margin: 0.1rem;
-    padding: 0;
-    font-size: 12px;
-  }
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0.2rem;
 `;
 const TagsContainer = styled.ul`
   display: flex;
+  flex-wrap: wrap;
 `;
 function Tags({ proj }) {
   return (
