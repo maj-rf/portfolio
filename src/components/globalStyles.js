@@ -53,6 +53,15 @@ export const darkTheme = {
   ddbg: '#fff',
 };
 
+export const wiggle = keyframes`
+    0%, 100% {
+    transform: translate3d(0,-5px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+`;
+
 export const waveAnimation = keyframes`
 0% {
       transform: rotate(0deg);

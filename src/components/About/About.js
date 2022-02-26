@@ -1,9 +1,9 @@
 import { data } from './About.style';
-import { StyledSection, SkillCardWrapper } from './About.style';
+import { AboutSection, SkillCardWrapper } from './About.style';
 import SkillCard from './SkillCard';
 export default function About() {
   return (
-    <StyledSection>
+    <AboutSection>
       <div>
         <h1>About</h1>
         <h3>Consitency is key.</h3>
@@ -27,6 +27,6 @@ export default function About() {
           ))}
         </SkillCardWrapper>
       </div>
-    </StyledSection>
+    </AboutSection>
   );
 }

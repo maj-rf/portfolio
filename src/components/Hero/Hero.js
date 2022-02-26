@@ -1,5 +1,5 @@
 import {
-  StyledSection,
+  HeroSection,
   WaveHand,
   GhIcon,
   LinkedinIcon,
@@ -8,7 +8,7 @@ import {
 
 export default function Hero(props) {
   return (
-    <StyledSection>
+    <HeroSection>
       <div className="intro-cont">
         <h3>
           Hello,{' '}
@@ -30,6 +30,6 @@ export default function Hero(props) {
           </a>
         </Icontainer>
       </div>
-    </StyledSection>
+    </HeroSection>
   );
 }

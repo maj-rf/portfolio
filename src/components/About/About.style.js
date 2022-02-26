@@ -9,16 +9,9 @@ import { Git } from '@styled-icons/boxicons-logos/Git';
 import { Nodejs } from '@styled-icons/boxicons-logos/Nodejs';
 import { Webpack } from '@styled-icons/simple-icons/Webpack';
 import { Npmjs } from '@styled-icons/remix-fill/Npmjs';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { wiggle } from '../globalStyles';
 
-const wiggle = keyframes`
-    0%, 100% {
-    transform: translate3d(0,-5px,0);
-  }
-  50% {
-    transform: translate3d(0,5px,0);
-  }
-`;
 const HtmlIcon = styled(Html5)`
   height: 100px;
   width: auto;
@@ -74,7 +67,7 @@ const NpmIcon = styled(Npmjs)`
   width: auto;
 `;
 
-const StyledSection = styled.section`
+const AboutSection = styled.section`
   padding: 1rem;
   margin: 6rem;
   line-height: 1.5rem;
@@ -113,4 +106,4 @@ export const data = [
   { name: 'npm', icon: <NpmIcon /> },
 ];
 
-export { StyledSection, SkillCardWrapper };
+export { AboutSection, SkillCardWrapper };

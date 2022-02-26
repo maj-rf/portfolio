@@ -4,7 +4,7 @@ import { Github } from '@styled-icons/boxicons-logos/Github';
 import { Linkedin } from '@styled-icons/fa-brands/Linkedin';
 import { waveAnimation } from '../globalStyles';
 
-const StyledSection = styled.section`
+const HeroSection = styled.section`
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -60,4 +60,4 @@ const Icontainer = styled.div`
   }
 `;
 
-export { StyledSection, WaveHand, GhIcon, LinkedinIcon, Icontainer };
+export { HeroSection, WaveHand, GhIcon, LinkedinIcon, Icontainer };

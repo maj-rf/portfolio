@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Hero/Hero';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Contact from './components/Contact';
 import { GlobalStyles, lightTheme, darkTheme } from './components/globalStyles';
