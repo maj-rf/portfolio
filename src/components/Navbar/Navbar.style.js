@@ -35,6 +35,7 @@ const Links = styled.li`
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
+  font-weight: 900;
   &::after {
     position: absolute;
     content: '';

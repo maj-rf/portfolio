@@ -17,7 +17,7 @@ export const projectdata = [
     title: 'Battleship',
     description:
       'A single player implementation of the classic Battleship game.',
-    tags: ['Javascript', 'HTML', 'CSS', 'Jest'],
+    tags: ['JavaScript', 'HTML', 'CSS', 'Jest'],
     image: battleship,
     repo: 'https://github.com/bananabread08/battleship-vanilla',
     live: 'https://bananabread08.github.io/battleship-vanilla/',
@@ -53,6 +53,6 @@ export const projectdata = [
     tags: ['React', 'styled-components'],
     image: myportfolio,
     repo: 'https://github.com/bananabread08/portfolio',
-    live: '',
+    live: 'https://bananabread08.github.io/portfolio/',
   },
 ];
