@@ -1,10 +1,21 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { LightMode } from '@styled-icons/material/LightMode';
 import { DarkMode } from '@styled-icons/material-rounded/DarkMode';
 import { Dog } from '@styled-icons/fa-solid/Dog';
 import { waveAnimation } from '../globalStyles';
 import { MenuAlt3 } from '@styled-icons/heroicons-solid/MenuAlt3';
 import { Close } from '@styled-icons/evaicons-solid/Close';
+
+export const rotateA = keyframes`
+    0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
 const Moon = styled(DarkMode)`
   margin-top: 5px;
   height: 40px;
@@ -12,6 +23,10 @@ const Moon = styled(DarkMode)`
   cursor: pointer;
   color: white;
   border-radius: 50%;
+  transition: all 1s ease-out;
+  animation-name: ${rotateA};
+  animation-duration: 1s;
+
   background-color: #805ad5;
   &:hover {
     background-color: #592fbb;
@@ -24,6 +39,9 @@ const Sun = styled(LightMode)`
   width: auto;
   cursor: pointer;
   border-radius: 50%;
+  transition: all 1s ease-out;
+  animation-name: ${rotateA};
+  animation-duration: 2.5s;
   background-color: #fbd38d;
   &:hover {
     background-color: #fabf58;
@@ -66,7 +84,7 @@ const LinksContainer = styled.ul`
 `;
 
 const ContactMe = styled.div`
-  background-color: #02a3ee;
+  background-color: ${(props) => props.theme.secondary};
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
   margin-bottom: 2px;
   border-radius: 5px 5px;
@@ -76,7 +94,10 @@ const ContactMe = styled.div`
   }
 `;
 
-const LogoContainer = styled(LinksContainer)`
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;

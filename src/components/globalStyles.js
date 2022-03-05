@@ -39,18 +39,20 @@ li {
 
 export const lightTheme = {
   body: '#fff',
-  text: '#121212',
+  text: '#242424',
   button: '#582FBB',
   ddtext: '#fff',
   ddbg: '#121212',
+  secondary: '#017bb4',
 };
 
 export const darkTheme = {
   text: '#fff',
-  body: '#121212',
+  body: '#242424',
   button: '#FABE58',
   ddtext: '#121212',
   ddbg: '#fff',
+  secondary: '#02a3ee',
 };
 
 export const wiggle = keyframes`

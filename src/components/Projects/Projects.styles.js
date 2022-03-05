@@ -5,12 +5,6 @@ const ProjectSection = styled.section`
   margin: 6rem;
   line-height: 1.5rem;
 
-  h3 {
-    color: #02a3ee;
-    animation-name: ${wiggle};
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-  }
   a {
     text-decoration: none;
     color: ${(props) => props.theme.body};
@@ -31,10 +25,17 @@ const ProjectSection = styled.section`
   }
 `;
 
+const AnimatedP = styled.p`
+  color: ${(props) => props.theme.secondary};
+  animation-name: ${wiggle};
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+`;
+
 const ProjectsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
 `;
 
-export { ProjectSection, ProjectsContainer };
+export { ProjectSection, ProjectsContainer, AnimatedP };
