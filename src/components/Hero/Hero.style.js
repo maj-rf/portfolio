@@ -9,11 +9,12 @@ const HeroSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(1rem + 1.2vw);
+  font-size: calc(1rem + 1.1vw);
   padding: 2rem;
   padding-top: 0;
+  margin-top: -1rem;
   span {
-    color: #02a3ee;
+    color: ${(props) => props.theme.secondary};
   }
   /* @media only screen and (max-width: 768px) {
   } */

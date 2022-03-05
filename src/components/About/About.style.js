@@ -72,16 +72,16 @@ const AboutSection = styled.section`
   margin: 6rem;
   line-height: 1.5rem;
 
-  h3 {
-    color: #02a3ee;
-    animation-name: ${wiggle};
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-  }
-
   @media screen and (max-width: 768px) {
     margin: 1rem;
   }
+`;
+
+const AnimatedP = styled.p`
+  color: ${(props) => props.theme.secondary};
+  animation-name: ${wiggle};
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 `;
 
 const SkillCardWrapper = styled.ul`
@@ -106,4 +106,4 @@ export const data = [
   { name: 'npm', icon: <NpmIcon /> },
 ];
 
-export { AboutSection, SkillCardWrapper };
+export { AboutSection, SkillCardWrapper, AnimatedP };
