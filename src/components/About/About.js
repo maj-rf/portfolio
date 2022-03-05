@@ -6,7 +6,7 @@ export default function About() {
     <AboutSection id="about">
       <div>
         <h1>About</h1>
-        <AnimatedP>Consitency is key.</AnimatedP>
+        <AnimatedP>Consistency is key.</AnimatedP>
         <p>
           You can call me Maj. I went through the non-traditional way of
           learning programming: self-teaching.{' '}

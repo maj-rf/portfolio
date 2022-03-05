@@ -5,6 +5,8 @@ const ProjectSection = styled.section`
   margin: 6rem;
   line-height: 1.5rem;
 
+  font-size: calc(0.7rem + 1.1vw);
+
   a {
     text-decoration: none;
     color: ${(props) => props.theme.body};
@@ -36,6 +38,7 @@ const ProjectsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
+  font-size: 16px;
 `;
 
 export { ProjectSection, ProjectsContainer, AnimatedP };

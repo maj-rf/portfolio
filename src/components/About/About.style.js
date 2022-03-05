@@ -70,7 +70,8 @@ const NpmIcon = styled(Npmjs)`
 const AboutSection = styled.section`
   padding: 1rem;
   margin: 6rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  font-size: calc(0.7rem + 1.1vw);
 
   @media screen and (max-width: 768px) {
     margin: 1rem;
