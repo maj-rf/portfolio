@@ -65,6 +65,17 @@ const LinksContainer = styled.ul`
   }
 `;
 
+const ContactMe = styled.div`
+  background-color: #02a3ee;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  margin-bottom: 2px;
+  border-radius: 5px 5px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+`;
+
 const LogoContainer = styled(LinksContainer)`
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -148,6 +159,7 @@ export {
   Moon,
   Sun,
   LinksContainer,
+  ContactMe,
   Links,
   DogIcon,
   LogoContainer,

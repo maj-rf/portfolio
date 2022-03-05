@@ -4,6 +4,7 @@ import {
   Moon,
   Sun,
   LinksContainer,
+  ContactMe,
   Links,
   DogIcon,
   LogoContainer,
@@ -65,6 +66,13 @@ export default function Navbar({ theme, toggleTheme }) {
           >
             Projects
           </Link>
+        </Links>
+        <Links>
+          <ContactMe>
+            <a href="mailto:rmkfermin@gmail.com?subject=We are Hiring!">
+              Contact Me
+            </a>
+          </ContactMe>
         </Links>
       </LinksContainer>
       <ButtonsContainer>
