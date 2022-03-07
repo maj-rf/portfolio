@@ -4,7 +4,7 @@ A website that shows my current skillset and projects made throughout my journey
 
 ![Imgur](https://i.imgur.com/1y06RXN.png)
 
-Check the [PREVIEW HERE](https://i.imgur.com/1y06RXN.png)
+Check the [PREVIEW HERE](https://bananabread08.github.io/portfolio/)
 
 ## Development
 Made with:
