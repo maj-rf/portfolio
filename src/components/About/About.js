@@ -17,6 +17,7 @@ export default function About() {
           <strong>NodeJS</strong>, <strong>MongoDB</strong>, and{' '}
           <strong>Express</strong>.
         </p>
+        <p>I usually catch Pokemon during my free time!</p>
       </div>
       <div>
         <h2>Tech Stack</h2>
