@@ -1,21 +1,22 @@
 import Link from 'next/link';
+import styles from '../styles/Header.module.scss';
 
 export default function Header() {
   return (
-    <header>
-      <nav>
-        <h1>maj.dev</h1>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/shop">Projects</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
             <Link href="/cart">Contact</Link>
           </li>
         </ul>
+        <button className={styles.btn}>O</button>
       </nav>
     </header>
   );
