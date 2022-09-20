@@ -1,0 +1,25 @@
+.header {
+  padding: 1rem 0;
+}
+
+.nav {
+  position: relative;
+  width: 75%;
+  max-width: 600px;
+  margin-inline: auto;
+
+  ul {
+    background-color: #242427;
+    border: 2px solid #303032;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3rem;
+  }
+
+  .btn {
+    position: absolute;
+    right: -2rem;
+    top: 0.3rem;
+  }
+}
