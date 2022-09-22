@@ -13,6 +13,8 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
+  SiJest,
+  SiTestinglibrary,
 } from 'react-icons/si';
 import { IconType } from './types/iconType';
 
@@ -34,4 +36,6 @@ export const iconData: IconType[] = [
   { icon: <SiNodedotjs />, name: 'NodeJS' },
   { icon: <SiExpress />, name: 'ExpressJS' },
   { icon: <SiMongodb />, name: 'MongoDB' },
+  { icon: <SiJest />, name: 'Jest' },
+  { icon: <SiTestinglibrary />, name: 'ReactTesting' },
 ];
