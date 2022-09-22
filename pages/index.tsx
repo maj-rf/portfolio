@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import styles from '../styles/Home.module.scss';
-
+import { Stack } from '../components/Stack';
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -21,9 +21,7 @@ const Home: NextPage = () => {
           <p>I usually catch Pokemon during my free time!</p>
         </section>
       </main>
-      <section className={styles.container}>
-        <h1>Tech Stack</h1>
-      </section>
+      <Stack />
     </div>
   );
 };

@@ -1,0 +1,7 @@
+.icon {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
