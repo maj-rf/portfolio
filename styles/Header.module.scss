@@ -1,5 +1,11 @@
 .header {
   padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 10vh;
+  width: 100vw;
+  color: rgb(168, 168, 168);
 }
 
 .nav {
@@ -14,7 +20,15 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .active {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
   }
 
   .btn {
