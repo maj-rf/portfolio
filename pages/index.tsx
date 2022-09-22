@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
@@ -9,20 +8,22 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Maj&#39;s Portfolio!</a>
         </h1>
+        <section className={styles.container}>
+          <h1>Software Engineer, Front-end Developer, Gamer</h1>
+          <p>
+            I am Maj, a software developer based in the Philippines. I like to
+            teach myself how to code. I am passionate about coding and I am
+            constantly learning more about web development. I went through the
+            non-traditional way of learning programming: self-teaching. I am
+            confident with my learning ability and with that, I love trying new
+            technologies.
+          </p>
+          <p>I usually catch Pokemon during my free time!</p>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <section className={styles.container}>
+        <h1>Tech Stack</h1>
+      </section>
     </div>
   );
 };
