@@ -1,12 +1,11 @@
 .container {
-  padding: 3rem 2rem;
   display: grid;
   place-items: center;
 }
 
 .proj_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
   gap: 1rem;
   padding: 0.5rem;

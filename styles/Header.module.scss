@@ -1,17 +1,19 @@
 .header {
   padding: 1rem 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 2;
   height: 10vh;
-  width: 100vw;
+  max-width: 70vw;
+  width: 500px;
+  margin-inline: auto;
   color: rgb(168, 168, 168);
 }
 
 .nav {
   position: relative;
-  width: 75%;
-  max-width: 600px;
+  max-width: 80vw;
+  width: 90%;
   margin-inline: auto;
 
   ul {
@@ -24,6 +26,7 @@
     gap: 0.3rem;
     font-size: 1.1rem;
     font-weight: 700;
+    padding: 0.3rem;
   }
 
   .active {
