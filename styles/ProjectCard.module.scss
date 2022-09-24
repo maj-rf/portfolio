@@ -1,0 +1,11 @@
+.container {
+  div img {
+    border-radius: 2rem;
+    transition: all 0.5s;
+
+    &:hover {
+      border-radius: 0;
+      scale: 1.02;
+    }
+  }
+}
