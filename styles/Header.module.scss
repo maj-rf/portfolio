@@ -26,7 +26,11 @@
     gap: 0.3rem;
     font-size: 1.1rem;
     font-weight: 700;
-    padding: 0.3rem;
+
+    li a {
+      display: block;
+      padding: 0.3rem 0;
+    }
   }
 
   .active {

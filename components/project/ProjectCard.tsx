@@ -15,7 +15,9 @@ export const ProjectCard = ({
       <h2>{title}</h2>
       <div className={styles.img_div}>
         <Link key={title} href={`/projects/${title}`}>
-          <Image src={image} alt={title} />
+          <a>
+            <Image src={image} alt={title} />
+          </a>
         </Link>
       </div>
       {children}
