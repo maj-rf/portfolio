@@ -1,6 +1,6 @@
 import { IconContext } from 'react-icons';
 import { Icon } from './Icon';
-import { iconData } from './icondata';
+import { iconData } from './data/icondata';
 import styles from '../styles/Stack.module.scss';
 
 export const Stack = (): JSX.Element => {
