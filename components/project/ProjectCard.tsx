@@ -6,8 +6,6 @@ export const ProjectCard = ({
   title,
   description,
   image,
-  repo,
-  live,
   children,
 }: projectType) => {
   return (
@@ -22,12 +20,6 @@ export const ProjectCard = ({
       </div>
       {children}
       <p>{description}</p>
-      <a target="_blank" href={repo} rel="noopener noreferrer">
-        Github
-      </a>
-      <a target="_blank" href={live} rel="noopener noreferrer">
-        Demo
-      </a>
     </li>
   );
 };

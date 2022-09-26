@@ -1,9 +1,9 @@
-import { NextPage } from 'next';
-import { projectdata } from '../../components/data/projectData';
+import { projectdata } from '../data/projectData';
 import styles from '../../styles/Projects.module.scss';
-import { ProjectCard } from '../../components/project/ProjectCard';
-import { Tags } from '../../components/project/Tags';
-const Projects: NextPage = () => {
+import { ProjectCard } from './ProjectCard';
+import { Tags } from './Tags';
+
+export const Projects = () => {
   return (
     <section className={styles.container}>
       <h1>My Personal Projects</h1>
@@ -31,5 +31,3 @@ const Projects: NextPage = () => {
     </section>
   );
 };
-
-export default Projects;

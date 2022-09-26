@@ -1,7 +1,13 @@
-import React from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { projectdata } from '../../components/data/projectData';
 import { GetStaticProps } from 'next';
+import { projectType } from '../../components/types/projectTypes';
+
+type Props = {
+  proj: projectType;
+};
+
 export const getStaticPaths = async () => {
   const data = projectdata;
   const paths = data.map((proj) => {
@@ -20,18 +26,28 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const data = projectdata.find((proj) => proj.title === id);
   return {
     props: {
-      item: data,
+      proj: data,
     },
   };
 };
 
-const ProjectPage = () => {
+const ProjectPage = ({ proj }: Props) => {
   const router = useRouter();
   const { id } = router.query;
   return (
     <div>
-      <h1>{id}</h1>
-      <button onClick={() => router.back()}>Back to Projects</button>
+      <h1>{proj.title}</h1>
+      <Image src={proj.image} alt={proj.title} />
+      <p>{proj.description}</p>
+      <div>
+        <a target="_blank" href={proj.repo} rel="noopener noreferrer">
+          Github
+        </a>
+        <a target="_blank" href={proj.live} rel="noopener noreferrer">
+          Demo
+        </a>
+      </div>
+      <button onClick={() => router.back()}>Back to Home</button>
     </div>
   );
 };

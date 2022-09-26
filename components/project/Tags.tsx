@@ -1,4 +1,4 @@
-import { iconData } from '../icondata';
+import { iconData } from '../data/icondata';
 import { IconContext } from 'react-icons';
 interface tagProps {
   tag: string;
