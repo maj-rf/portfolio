@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import styles from '../styles/Home.module.scss';
 import { Stack } from '../components/Stack';
+import { Projects } from '../components/project/Projects';
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         </section>
       </main>
       <Stack />
+      <Projects />
     </div>
   );
 };

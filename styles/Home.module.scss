@@ -5,12 +5,11 @@
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 
 .main {
-  min-height: calc(100vh - 10vh);
-  padding: 1rem 0;
+  min-height: calc(100vh - 6.5rem);
   flex: 1;
   @include flex-center;
   flex-direction: column;
