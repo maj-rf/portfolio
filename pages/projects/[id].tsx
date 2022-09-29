@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { projectdata } from '../../components/data/projectData';
 import { GetStaticProps } from 'next';
 import { projectType } from '../../components/types/projectTypes';
 import { Tags } from '../../components/project/Tags';
 import styles from '../../styles/ProjectPage.module.scss';
 import { HiArrowCircleLeft } from 'react-icons/hi';
-
+import { AiOutlineEye, AiFillGithub } from 'react-icons/ai';
 type Props = {
   proj: projectType;
 };
@@ -39,11 +38,12 @@ const ProjectPage = ({ proj }: Props) => {
   return (
     <section className={styles.container}>
       <div className={styles.heading_container}>
-        <button className={styles.back}>
-          <Link href="/">
+        <Link href="/" scroll={false}>
+          <a className={styles.back}>
             <HiArrowCircleLeft size={30} />
-          </Link>
-        </button>
+          </a>
+        </Link>
+
         <h1>{proj.title}</h1>
       </div>
       <Image src={proj.image} alt={proj.title} />
@@ -60,17 +60,20 @@ const ProjectPage = ({ proj }: Props) => {
         dolor cumque quam eaque illum est repudiandae expedita, consequuntur
         facere.
       </p>
-      <div>
-        <button>
+      <div className={styles.links}>
+        <div className={styles.link}>
           <a target="_blank" href={proj.repo} rel="noopener noreferrer">
+            <AiOutlineEye />
             Code
           </a>
-        </button>
-        <button>
+        </div>
+
+        <div className={styles.link}>
           <a target="_blank" href={proj.live} rel="noopener noreferrer">
+            <AiFillGithub />
             Demo
           </a>
-        </button>
+        </div>
       </div>
     </section>
   );
