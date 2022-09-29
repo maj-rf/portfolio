@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 12rem);
+
+  img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.heading_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0.6);
+    }
+  }
+
+  button > * {
+    vertical-align: middle;
+  }
+}
+
+.tag_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-inline: auto;
+}

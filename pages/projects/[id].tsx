@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { projectdata } from '../../components/data/projectData';
 import { GetStaticProps } from 'next';
 import { projectType } from '../../components/types/projectTypes';
 import { Tags } from '../../components/project/Tags';
+import styles from '../../styles/ProjectPage.module.scss';
+import { HiArrowCircleLeft } from 'react-icons/hi';
+
 type Props = {
   proj: projectType;
 };
@@ -32,18 +36,30 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 const ProjectPage = ({ proj }: Props) => {
-  const router = useRouter();
-  const { id } = router.query;
   return (
-    <div>
-      <h1>{proj.title}</h1>
+    <section className={styles.container}>
+      <div className={styles.heading_container}>
+        <button className={styles.back}>
+          <Link href="/">
+            <HiArrowCircleLeft size={30} />
+          </Link>
+        </button>
+        <h1>{proj.title}</h1>
+      </div>
       <Image src={proj.image} alt={proj.title} />
-      <p>{proj.description}</p>
-      <ul>
+      {/* <p>{proj.description}</p> */}
+      <ul className={styles.tag_container}>
         {proj.tags.map((tag) => {
           return <Tags key={tag + proj.title} tag={tag} />;
         })}
       </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia in
+        ab excepturi aperiam ipsa velit, pariatur accusamus modi optio officiis
+        provident sint molestias deserunt, sequi vitae hic reprehenderit! Libero
+        dolor cumque quam eaque illum est repudiandae expedita, consequuntur
+        facere.
+      </p>
       <div>
         <button>
           <a target="_blank" href={proj.repo} rel="noopener noreferrer">
@@ -56,8 +72,7 @@ const ProjectPage = ({ proj }: Props) => {
           </a>
         </button>
       </div>
-      <button onClick={() => router.back()}>Back to Home</button>
-    </div>
+    </section>
   );
 };
 
