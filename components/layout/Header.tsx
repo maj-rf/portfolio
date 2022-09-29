@@ -4,8 +4,7 @@ import { useRouter } from 'next/router';
 
 export default function Header() {
   const router = useRouter();
-  const currentRoute = router.pathname;
-
+  const currentRoute = router.asPath;
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -22,10 +21,10 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/projects">
+            <Link href={'#projects'}>
               <a
                 className={
-                  currentRoute === '/projects' ? `${styles.active}` : undefined
+                  currentRoute === '/#projects' ? `${styles.active}` : undefined
                 }
               >
                 Projects
@@ -33,10 +32,10 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/cart">
+            <Link href={'#footer'}>
               <a
                 className={
-                  currentRoute === '/contact' ? `${styles.active}` : undefined
+                  currentRoute === '/#footer' ? `${styles.active}` : undefined
                 }
               >
                 Contact

@@ -5,7 +5,7 @@ import { Tags } from './Tags';
 
 export const Projects = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id={'projects'}>
       <h1>My Personal Projects</h1>
       <ul className={styles.proj_container}>
         {projectdata.map((proj) => {
