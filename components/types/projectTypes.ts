@@ -3,7 +3,8 @@ import React from 'react';
 
 export interface projectType {
   title: string;
-  description: string;
+  summary: string;
+  description?: string;
   tags: string[];
   image: StaticImageData;
   repo: string;
