@@ -47,19 +47,12 @@ const ProjectPage = ({ proj }: Props) => {
         <h1>{proj.title}</h1>
       </div>
       <Image src={proj.image} alt={proj.title} />
-      {/* <p>{proj.description}</p> */}
       <ul className={styles.tag_container}>
         {proj.tags.map((tag) => {
           return <Tags key={tag + proj.title} tag={tag} />;
         })}
       </ul>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia in
-        ab excepturi aperiam ipsa velit, pariatur accusamus modi optio officiis
-        provident sint molestias deserunt, sequi vitae hic reprehenderit! Libero
-        dolor cumque quam eaque illum est repudiandae expedita, consequuntur
-        facere.
-      </p>
+      <p>{proj.description}</p>
       <div className={styles.links}>
         <div className={styles.link}>
           <a target="_blank" href={proj.repo} rel="noopener noreferrer">

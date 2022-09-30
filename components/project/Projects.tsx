@@ -13,7 +13,7 @@ export const Projects = () => {
             <ProjectCard
               key={proj.title}
               title={proj.title}
-              description={proj.description}
+              summary={proj.summary}
               tags={proj.tags}
               image={proj.image}
               repo={proj.repo}

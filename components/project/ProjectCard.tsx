@@ -4,7 +4,7 @@ import { projectType } from '../types/projectTypes';
 import styles from '../../styles/ProjectCard.module.scss';
 export const ProjectCard = ({
   title,
-  description,
+  summary,
   image,
   children,
 }: projectType) => {
@@ -17,7 +17,7 @@ export const ProjectCard = ({
             <Image src={image} alt={title} />
           </div>
           {children}
-          <p>{description}</p>
+          <p>{summary}</p>
         </a>
       </Link>
     </li>
