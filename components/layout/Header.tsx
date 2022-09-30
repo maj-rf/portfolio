@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/Header.module.scss';
 import { useRouter } from 'next/router';
-
+import { FiSun } from 'react-icons/fi';
 export default function Header() {
   const router = useRouter();
   const currentRoute = router.asPath;
@@ -45,7 +45,9 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <button className={styles.btn}>O</button>
+        <button className={styles.btn}>
+          <FiSun />
+        </button>
       </nav>
     </header>
   );
