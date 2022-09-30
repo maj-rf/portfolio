@@ -24,7 +24,9 @@ export default function Header() {
             <Link href={'#projects'}>
               <a
                 className={
-                  currentRoute === '/#projects' ? `${styles.active}` : undefined
+                  currentRoute.includes('projects')
+                    ? `${styles.active}`
+                    : undefined
                 }
               >
                 Projects

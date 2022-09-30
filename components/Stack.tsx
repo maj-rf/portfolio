@@ -7,7 +7,7 @@ export const Stack = (): JSX.Element => {
   return (
     <section className={styles.container}>
       <h1>Tech Stack</h1>
-      <IconContext.Provider value={{ color: 'papayawhip', size: '70' }}>
+      <IconContext.Provider value={{ color: 'papayawhip', size: '30' }}>
         <ul>
           {iconData.map((icon) => {
             return <Icon key={icon.name} icon={icon.icon} name={icon.name} />;
