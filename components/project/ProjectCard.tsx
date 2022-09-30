@@ -11,15 +11,15 @@ export const ProjectCard = ({
   return (
     <li className={styles.container} key={title}>
       <h2>{title}</h2>
-      <div className={styles.img_div}>
-        <Link key={title} href={`/projects/${title}`}>
-          <a>
+      <Link key={title} href={`/projects/${title}`}>
+        <a>
+          <div className={styles.img_div}>
             <Image src={image} alt={title} />
-          </a>
-        </Link>
-      </div>
-      {children}
-      <p>{description}</p>
+          </div>
+          {children}
+          <p>{description}</p>
+        </a>
+      </Link>
     </li>
   );
 };
