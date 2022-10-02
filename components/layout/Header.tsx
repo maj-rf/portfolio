@@ -45,7 +45,7 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <button className={styles.btn}>
+        <button className={styles.btn} aria-label="dark mode toggle">
           <FiSun />
         </button>
       </nav>
