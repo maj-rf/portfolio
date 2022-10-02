@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/Header.module.scss';
 import { useRouter } from 'next/router';
-import { FiSun } from 'react-icons/fi';
+import { FiSun, FiMail } from 'react-icons/fi';
 export default function Header() {
   const router = useRouter();
   const currentRoute = router.asPath;
@@ -33,16 +33,14 @@ export default function Header() {
               </a>
             </Link>
           </li>
-          <li>
-            <Link href={'#footer'}>
-              <a
-                className={
-                  currentRoute === '/#footer' ? `${styles.active}` : undefined
-                }
-              >
-                Contact
-              </a>
-            </Link>
+          <li className={styles.mail}>
+            <a
+              className={
+                currentRoute === '/#footer' ? `${styles.active}` : undefined
+              }
+            >
+              <FiMail />
+            </a>
           </li>
         </ul>
         <button className={styles.btn} aria-label="dark mode toggle">
