@@ -2,11 +2,11 @@ import { projectdata } from '../data/projectData';
 import styles from '../../styles/Projects.module.scss';
 import { ProjectCard } from './ProjectCard';
 import { Tags } from './Tags';
-
+import utils from '../../styles/utils.module.scss';
 export const Projects = () => {
   return (
-    <section className={styles.container} id={'projects'}>
-      <h1>My Personal Projects</h1>
+    <section className={utils.container} id={'projects'}>
+      <h2>My Personal Projects</h2>
       <ul className={styles.proj_container}>
         {projectdata.map((proj) => {
           return (
