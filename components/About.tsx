@@ -1,5 +1,5 @@
 import utils from '../styles/utils.module.scss';
-
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 export const About = () => {
   return (
     <section className={utils.container} id="about">
@@ -14,6 +14,14 @@ export const About = () => {
       <p style={{ textAlign: 'left' }}>
         I usually catch Pokemon during my free time!
       </p>
+      <div>
+        <a href="https://github.com/bananabread08">
+          <AiFillGithub size={70} />
+        </a>
+        <a href="https://www.linkedin.com/in/ralph-majed-keene-fermin-601575231/">
+          <AiFillLinkedin size={70} />
+        </a>
+      </div>
     </section>
   );
 };
