@@ -1,13 +1,20 @@
 # My Personal Portfolio
 
+Version 2.0 made with NextJS and TypeScript.
+
 A website that shows my current skillset and projects made throughout my journey to learn programming. Responsive on most screens.
 
-![Imgur](https://i.imgur.com/1y06RXN.png)
+![main](https://i.imgur.com/RCnjJbf.png)
 
-Check the [PREVIEW HERE](https://bananabread08.github.io/portfolio/)
+<p align="center">
+<img src="https://i.imgur.com/dMNVj33.png">
+</p>
 
 ## Development
+
 Made with:
-- React
-- styled-components
-- styled-icons
+
+- NextJS / React
+- TypeScript
+- SCSS
+- react-icons

@@ -1,0 +1,19 @@
+.proj_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+  gap: 1rem;
+}
+
+.tag_container {
+  background-color: rgba(27, 26, 26);
+  border-radius: 0 1rem 1rem 0;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin-inline: auto;
+  padding: 0.3rem;
+}

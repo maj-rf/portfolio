@@ -1,0 +1,17 @@
+.container {
+  font-size: clamp(0.9rem, 2vw, 19px);
+  ul {
+    padding: 1rem 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media screen and (min-width: 800px) {
+    ul {
+      gap: 0.5rem;
+    }
+  }
+}
