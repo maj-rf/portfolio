@@ -5,14 +5,13 @@ export const About = () => {
     <section className={utils.container} id="about">
       <h2>About Me</h2>
       <p style={{ textAlign: 'left' }}>
-        I a software developer based in the Philippines. I am passionate about
-        coding and I am constantly learning more about web development. I went
-        through the non-traditional way of learning programming: self-teaching.
-        I am confident with my learning ability and with that, I love trying new
+        I am a software developer based in the Philippines. I am passionate
+        about coding and I am constantly learning more about web development. I
+        am confident with my learning ability and with that, I love trying new
         technologies.
       </p>
       <p style={{ textAlign: 'left' }}>
-        I usually catch Pokemon during my free time!
+        I usually play video games during my free time. Mostly catching Pokemon!
       </p>
       <div>
         <a href="https://github.com/bananabread08">

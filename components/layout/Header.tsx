@@ -34,18 +34,14 @@ export default function Header() {
             </Link>
           </li>
           <li className={styles.mail}>
-            <a
-              className={
-                currentRoute === '/#footer' ? `${styles.active}` : undefined
-              }
-            >
+            <a href="mailto:rmkfermin@gmail.com?subject=We are Hiring!">
               <FiMail />
             </a>
           </li>
         </ul>
-        <button className={styles.btn} aria-label="dark mode toggle">
+        {/* <button className={styles.btn} aria-label="dark mode toggle">
           <FiSun />
-        </button>
+        </button> */}
       </nav>
     </header>
   );
