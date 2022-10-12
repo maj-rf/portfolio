@@ -3,6 +3,7 @@ import React from 'react';
 
 export interface projectType {
   title: string;
+  id: string;
   summary: string;
   description?: string;
   tags: string[];
