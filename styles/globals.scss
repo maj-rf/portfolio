@@ -2,8 +2,9 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Plus Jakarta Sans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -12,6 +13,27 @@ body {
   line-height: 1.6;
   background-color: #171717;
   color: #fff;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -5;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 160px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
 }
 
 a {

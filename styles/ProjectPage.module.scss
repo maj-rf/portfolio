@@ -6,6 +6,7 @@
   height: calc(100vh - 12rem);
 
   h1 {
+    font-weight: 700;
     position: relative;
     &::after {
       position: absolute;
@@ -34,7 +35,8 @@
 
   .back {
     &:hover {
-      filter: brightness(0.6);
+      color: black;
+      filter: brightness(1.2);
     }
   }
 
