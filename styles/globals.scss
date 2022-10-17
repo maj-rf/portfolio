@@ -46,6 +46,12 @@ img {
   height: 100%;
 }
 
+@media (max-width: 600px) {
+  .wave svg {
+    height: 110px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
